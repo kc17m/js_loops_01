@@ -102,7 +102,7 @@ console.log(num, outputLoop);
 // let n = "0";
 let loop = () => {
     let o = "";
-    let n = "0";
+    let n = "";
     console.log("test");
     for (let i = 0; i < inputNum.value; i++) {
         o += "o";
