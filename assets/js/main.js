@@ -162,6 +162,9 @@ separate(text)
 //lev3_2
 
 let numArr2 = [5, 22, 15, 100, 55];
+let arrNumbers = document.getElementById("array_numbers");
+arrNumbers.innerHTML = numArr2.join(" ");
+
 
 let divisor = document.getElementById("divisor");
 
@@ -179,6 +182,46 @@ let div = (nums) => {
 }
 
 div(numArr2);
+
+// lev3_4
+//for loop prüft, ob max durch first number %% second number teilbar ist: max % first != 0, max % second = 0 
+
+let first = document.getElementById("first");
+let second = document.getElementById("second");
+let max = document.getElementById("max");
+let sum = document.getElementById("sum")
+
+console.log(first, second, max, sum);
+
+let calc = () => {
+    console.log("test");
+    let firstNum = Number(first.value);
+    let secondNum = Number(second.value);
+    let maxNum = Number(max.value);
+    let total = 0;
+    console.log(firstNum, typeof firstNum, typeof secondNum, typeof maxNum);
+    if (!max.value) {
+        sum.innerHTML += `Please enter a number`;
+    }
+    else if (firstNum == secondNum) {
+        sum.innerHTML = `Please select different numbers as first and second number`;
+    }
+    else {
+        for (let i = 2; i < maxNum; i++) {
+            if (i % firstNum == 0 || i % secondNum == 0) {
+                total += i;
+                console.log(maxNum, i);
+            }
+        }
+        sum.innerHTML = total;
+    }
+
+}
+
+
+
+
+
 
 
 

@@ -47,7 +47,50 @@
     </fieldset>
 
     <h1>lev3_2 Zahlen teilbar durch</h1>
+    <h3>Numbers in my array: </h3>
+    <h4 id="array_numbers"></h4>
     <h3 id="divisor"></h3>
+
+    <h1>lev3_4 Summe der Zahlen</h1>
+
+    <fieldset>
+        <form action="" onsubmit="return false">
+            <label for="max">Enter a number:</label><br>
+            <input type="number" name="max" id="max">
+            <br>
+            <br>
+            <label for="first">First number:</label><br>
+            <select name="first" id="first" form="firstform">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <br><br>
+            <label for="second">Second number:</label><br>
+            <select name="second" id="second" form="secondform">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Count Me" onclick="calc()">
+            <br><br>
+            <h4>My result:</h4>
+            <h3 id="sum"></h3>
+
+        </form>
+    </fieldset>
+
 
 
     <script src="assets/js/main.js"></script>
