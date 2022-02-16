@@ -98,9 +98,11 @@ let inputNum = document.getElementById("num");
 let outputLoop = document.getElementById("outputLoop");
 
 console.log(num, outputLoop);
-let o = "";
-let n = "0";
+// let o = "";
+// let n = "0";
 let loop = () => {
+    let o = "";
+    let n = "0";
     console.log("test");
     for (let i = 0; i < inputNum.value; i++) {
         o += "o";
