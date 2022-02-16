@@ -125,21 +125,21 @@ let loop = () => {
 
 // lev2_1
 
-let arrHundret = [];
+let arrHundred = [];
 
 for (let i = 1; i <= 100; i++) {
     if (i < 10) {
-        arrHundret.push("image_00" + i + ".jpg")
-        // console.log(arrHundret);
+        arrHundred.push("image_00" + i + ".jpg")
+        // console.log(arrHundred);
     }
     else if (i < 100) {
-        arrHundret.push("image_0" + i + ".jpg");
-        // console.log(arrHundret);
+        arrHundred.push("image_0" + i + ".jpg");
+        // console.log(arrHundred);
     }
-    else arrHundret.push("image_100.jpg")
-    // console.log(arrHundret);
+    else arrHundred.push("image_100.jpg")
+    // console.log(arrHundred);
 }
-console.log(arrHundret);
+console.log(arrHundred);
 
 
 // lev3_1
